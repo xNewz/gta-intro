@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "PAWN COMPILER",
+            "type": "shell",
+            "args": [
+                "${relativeFile}"
+            ],
+            "windows": {
+                "command": "${workspaceRoot}\\pawn\\pawncc.exe"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
