@@ -1,11 +1,13 @@
 {
-    "version": "2.0.0",
+    "version": "2.0.0", 
     "tasks": [
         {
             "label": "PAWN COMPILER",
             "type": "shell",
             "args": [
-                "${relativeFile}"
+            //    "${relativeFile}",
+                "${workspaceRoot}\\gamemodes\\nt.pwn",
+                "-o${workspaceRoot}\\gamemodes\\nt.amx"
             ],
             "windows": {
                 "command": "${workspaceRoot}\\pawn\\pawncc.exe"
